@@ -49,13 +49,16 @@
             android:name="io.fabric.ApiKey"
             android:value="51ff76a51d09994386c4e411b782471424fbd000" />
 
-        <service
+        <!--<service
             android:name="com.shreeyesh.firebaseServices.MyFirebaseInstanceIDService"
             tools:ignore="ExportedService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
-        </service>
+        </service>-->
+
+
+        
         <service
             android:name="com.shreeyesh.firebaseServices.MyFirebaseMessagingService"
             tools:ignore="ExportedService">

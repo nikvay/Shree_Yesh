@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.shreeyesh.R;
@@ -48,6 +49,15 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     public MyFirebaseMessagingService() {
         // empty required
+    }
+
+    @Override
+    public void onNewToken(String token) {
+        super.onNewToken(token);
+        Log.d(TAG, "Refreshed token: " + token);
+
+        SharedPreference.putDeviceToken(getApplicationContext(),token);
+
     }
 
     @Override
