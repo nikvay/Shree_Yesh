@@ -47,7 +47,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="51ff76a51d09994386c4e411b782471424fbd000" />
+            android:value="8231de6c0c7cdedee5183acb38f73cc9512671a5" />
 
         <!--<service
             android:name="com.shreeyesh.firebaseServices.MyFirebaseInstanceIDService"
@@ -58,7 +58,7 @@
         </service>-->
 
 
-        
+
         <service
             android:name="com.shreeyesh.firebaseServices.MyFirebaseMessagingService"
             tools:ignore="ExportedService">
