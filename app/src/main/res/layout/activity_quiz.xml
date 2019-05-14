@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_them">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/app_toolBar_color"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_vector_back_white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/iv_back"
+                android:padding="5dp"
+                android:text="GKQuiz"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/txt_size_20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_current_date_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/padding_3"
+                android:text="11-Feb-2019"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <TextView
+                android:id="@+id/txt_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="00:00"
+                android:padding="@dimen/padding_10"
+                android:textColor="@color/txt_color_black"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_testQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_40"
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/padding_5"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_exit_quiz"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn"
+            android:text="Exit"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_txt_color"
+            android:textSize="@dimen/txt_size_17" />
+
+        <Button
+            android:id="@+id/btn_submit_quiz"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_txt_color"
+            android:textSize="@dimen/txt_size_17" />
+
+    </LinearLayout>
+
+</RelativeLayout>

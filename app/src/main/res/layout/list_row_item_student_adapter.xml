@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cv_iv_std_profile"
+                android:layout_width="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_vector_student_boy" />
+
+          <!--  <ImageView
+                android:id="@+id/iv_std_profile"
+                android:layout_width="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_vector_student_boy"
+                android:layout_height="60dp" />-->
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_alignEnd="@+id/cv_iv_std_profile"
+                android:id="@+id/iv_check_true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_vector_checked"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/student_rollNo_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color_black"
+            android:textSize="@dimen/txt_size_17"
+            android:layout_gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/student_name_txt"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color_black"
+            android:textSize="@dimen/txt_size_17"
+            android:layout_gravity="center"
+            android:text="Admin" />
+
+    </LinearLayout>
+
+</RelativeLayout>

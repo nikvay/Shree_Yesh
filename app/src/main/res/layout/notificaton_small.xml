@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/iv_notification_app_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_toEndOf="@+id/iv_notification_app_logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_notification_name_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/txt_size_15"
+                android:textColor="@color/txt_color_black" />
+
+            <TextView
+                android:id="@+id/tv_notification_title_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:textSize="@dimen/txt_size_17"
+                android:textColor="@color/txt_color_black" />
+
+            <TextView
+                android:id="@+id/tv_notification_desc_small"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/txt_size_15"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color_black" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_them"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_toolBar_color"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_vector_back_white"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/iv_back"
+            android:padding="5dp"
+            android:text="Account Login"
+            android:textColor="@color/txt_color_white"
+            android:textSize="@dimen/txt_size_20" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom_c_name"
+        android:layout_below="@+id/rel_actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_login"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/app_shree_yesh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <EditText
+                android:id="@+id/edt_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="User name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/padding_10"
+                android:maxLength="15"
+                android:textColor="@color/txt_color_black"
+                android:textColorHint="@color/txt_hint_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_faint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_25"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="* * * * * * *"
+                android:imeOptions="actionDone"
+                android:maxLength="15"
+                android:inputType="textPassword"
+                android:padding="@dimen/padding_10"
+                android:textColor="@color/txt_color_black"
+                android:textColorHint="@color/txt_hint_color_black"
+                android:textSize="@dimen/txt_size_17" />
+            <!--<android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false"
+                            android:gravity="center"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/app_color">
+
+                            <EditText
+                                android:id="@+id/edt_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="* * * * * * *"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:textColor="@color/txt_color_black"
+                                android:textColorHint="@color/txt_hint_color_black"
+                                android:textSize="@dimen/txt_size_17" />
+
+                        </android.support.design.widget.TextInputLayout>
+            -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_faint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_25"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_30"
+                    android:layout_marginBottom="@dimen/margin_40"
+                    android:background="@drawable/shape_btn"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_txt_color"
+                    android:textSize="@dimen/txt_size_17" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_c_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF9100"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5"
+            android:text="Nikvay Technology 2019"
+            android:textColor="@color/txt_color_black"
+            android:textSize="@dimen/txt_size_17" />
+
+    </LinearLayout>
+
+</RelativeLayout>

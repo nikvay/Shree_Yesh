@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel_chat_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_7"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/shape_chatting_receiver">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10">
+
+            <TextView
+                android:id="@+id/tv_chat_receiver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:text="Prakash bhosale"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <TextView
+                android:id="@+id/tv_chat_receiver_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:text="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_15" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_chatting_receiver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/padding_5"
+            android:text="10:10"
+            android:textColor="@color/update_date_color"
+            android:textSize="@dimen/txt_size_15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_chat_sender"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="@dimen/margin_7"
+        android:layout_marginEnd="@dimen/margin_5"
+        android:background="@drawable/shape_chatting_sender">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10">
+
+            <TextView
+                android:id="@+id/tv_chat_sender_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:text="You"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <TextView
+                android:id="@+id/tv_chat_sender_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:text="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_15" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_chatting_sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/padding_5"
+            android:text="10:10"
+            android:textColor="@color/update_date_color"
+            android:textSize="@dimen/txt_size_15" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

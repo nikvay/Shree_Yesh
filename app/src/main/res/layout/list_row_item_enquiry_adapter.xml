@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/padding_7"
+    android:paddingTop="@dimen/padding_10"
+    android:paddingEnd="@dimen/padding_7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_list_recycler_view_border"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_list_recycler_view"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_5">
+
+            <TextView
+                android:id="@+id/tv_enq_std_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vishal Patil"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class :"
+                    android:textColor="@color/txt_color_black"
+                    android:textSize="@dimen/txt_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_enquiry_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:text="6 th Class"
+                    android:textColor="@color/txt_color_black"
+                    android:textSize="@dimen/txt_size_17" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enquiry Status :"
+                    android:textColor="@color/txt_color_black"
+                    android:textSize="@dimen/txt_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_enquiry_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:text="hold"
+                    android:textColor="@color/txt_color_orange"
+                    android:textSize="@dimen/txt_size_17" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_enq_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="1234567890"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <TextView
+                android:id="@+id/tv_enq_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Holiday home Trip"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <TextView
+                android:id="@+id/tv_enq_date_current_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="22-04-2019"
+                android:textColor="@color/update_date_color"
+                android:textSize="@dimen/txt_size_15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

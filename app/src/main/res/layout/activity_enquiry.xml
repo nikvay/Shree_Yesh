@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_them"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_toolBar_color"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_vector_back_white"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/iv_back"
+            android:padding="5dp"
+            android:text="Enquiry Form"
+            android:textColor="@color/txt_color_white"
+            android:textSize="@dimen/txt_size_20" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_20"
+            android:paddingEnd="@dimen/padding_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:padding="@dimen/padding_5"
+                android:text="Full Name :"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/padding_5">
+
+                <EditText
+                    android:id="@+id/edt_enq_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Please enter name"
+                    android:textAllCaps="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColor="@color/txt_color_black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:padding="@dimen/padding_5"
+                android:text="Class Name :"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/padding_5">
+
+                <EditText
+                    android:id="@+id/edt_enq_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Please enter class name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColor="@color/txt_color_black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:padding="@dimen/padding_5"
+                android:text="Phone Number :"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/padding_5">
+
+                <EditText
+                    android:id="@+id/edt_enq_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:hint="Please enter number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textColor="@color/txt_color_black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:padding="@dimen/padding_5"
+                android:text="Email :"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/padding_5">
+
+                <EditText
+                    android:id="@+id/edt_enq_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Please enter e-mail"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/txt_color_black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:padding="@dimen/padding_5"
+                android:text="Address :"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <LinearLayout
+                android:id="@+id/ll_enq_address"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/padding_5">
+
+                <EditText
+                    android:id="@+id/edt_enq_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:maxLines="3"
+                    android:hint="Please enter address"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/txt_color_black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:padding="@dimen/padding_5"
+                android:text="Status :"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/padding_5">
+
+                <Spinner
+                    android:id="@+id/spinner_enq_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:padding="@dimen/padding_5"
+                android:text="Enquiry Remark :"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <LinearLayout
+                android:id="@+id/ll_enq_remark"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/padding_10">
+
+                <EditText
+                    android:id="@+id/edt_enq_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Please enter remark"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/txt_color_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_25"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_marginBottom="@dimen/margin_40"
+                    android:id="@+id/btn_enq_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_30"
+                    android:background="@drawable/shape_btn"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_txt_color"
+                    android:textSize="@dimen/txt_size_17" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

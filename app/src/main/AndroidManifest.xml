@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shreeyesh">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <!--
+          <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDV2_xy58r15K6TskZy4KWMuhUDVq67jqM" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAzyZzV8IZTNbxBXvjaJYIaebL63jmtzuc" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="51ff76a51d09994386c4e411b782471424fbd000" />
+
+        <service
+            android:name="com.shreeyesh.firebaseServices.MyFirebaseInstanceIDService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.shreeyesh.firebaseServices.MyFirebaseMessagingService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Add the service created in services package ! -->
+        <service android:name=".ui.service.LocationMonitoringService" />
+
+        <activity android:name="com.shreeyesh.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shreeyesh.ui.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.SelectUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.NotificationAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.HomeWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.EventAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.GalleryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.HomeWorkDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.EventDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.NotificationDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.shreeyesh.ui.activity.WebViewActivity" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.UploadNotesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.VideoViewActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.LeaveDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.LeaveAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.HolidayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.NotificationTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.QuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.GroupChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.EnquiryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shreeyesh.ui.activity.LibraryAddRecordsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".ui.activity.DriverActivity" />
+
+    </application>
+
+</manifest>

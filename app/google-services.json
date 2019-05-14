@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "888055935014",
+    "firebase_url": "https://shreeyesh-db9c3.firebaseio.com",
+    "project_id": "shreeyesh-db9c3",
+    "storage_bucket": "shreeyesh-db9c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888055935014:android:ae5c8312e0ba2fec",
+        "android_client_info": {
+          "package_name": "com.shreeyesh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888055935014-cfbm0ep9i80553ldmvdmb2h19puja1fr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shreeyesh",
+            "certificate_hash": "49d2e0dacd316f7c56c60cabb0321ab565a26ab2"
+          }
+        },
+        {
+          "client_id": "888055935014-0nup227kjiarl9npnoilsaj0rdam7dqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8PpOhsOBsbsaTlcezjIs_MUuQy49p-mw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888055935014-0nup227kjiarl9npnoilsaj0rdam7dqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

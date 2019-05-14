@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimary">#3499DB</color>
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <color name="colorPrimaryDark">#FC135D8D</color>
+    <color name="colorAccent">#3499DB</color>
+
+
+    <color name="app_color">#3499DB</color>
+    <color name="app_color_two">#000</color>
+    <color name="app_bg_color">#3499DB</color>
+    <color name="app_status_bar_color">#393742</color>
+    <color name="app_toolBar_color">#3499DB</color>
+    <color name="app_them_color">#F5F5F5</color>
+
+    <color name="btn_color">#3499DB</color>
+    <color name="btn_txt_color">#FFF</color>
+    <color name="txt_hint_color_black">#65000000</color>
+    <color name="txt_color_black">#000</color>
+    <color name="txt_color_white">#FFF</color>
+    <color name="txt_color_green">#3bae27</color>
+    <color name="txt_color_red">#FF3D00</color>
+    <color name="txt_color_orange">#FFA500</color>
+    <color name="txt_link_color">#4960E4</color>
+    <color name="update_date_color">#3bae27</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_faint">#65000000</color>
+    <color name="lightgray">#e7e7e7</color>
+
+
+
+</resources>

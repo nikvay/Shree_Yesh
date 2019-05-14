@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:paddingEnd="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_20"
+            android:text="Are you sure you want to app logout ?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_17" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="@color/btn_color"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/txt_size_17" />
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@color/btn_color"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/txt_color_white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
